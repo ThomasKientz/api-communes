@@ -43,7 +43,8 @@
     "test": "npm run lint && npm run test-unit",
     "fetch-data": "./fetch_data.sh",
     "integrate-data": "DEBUG=integration node integration",
-    "prepare-data": "npm run fetch-data && npm run integrate-data"
+    "prepare-data": "npm run fetch-data && npm run integrate-data",
+    "heroku-postbuild": "npm run prepare-data"
   },
   "xo": {
     "semicolon": false,
